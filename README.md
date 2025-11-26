@@ -15,7 +15,7 @@ This AI-powered interview bot conducts interactive voice interviews, answering q
 
 ## 🚀 Live Demo
 
-**[Try it live here!](#)** 
+**[Try it live here!](https://amarthya-interview-bot.streamlit.app/)** 
 
 ---
 
