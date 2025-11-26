@@ -173,8 +173,8 @@ def main():
     st.markdown("---")
     
     # Voice Input Section
-    st.markdown("### 🎤 Voice Input (Optional)")
-    audio_input_live = st.audio_input("Record your question")
+    st.markdown("### Voice Input (Optional):")
+    audio_input_live = st.audio_input("Record Your Question and Press Submit")
 
     # Only process audio once
     if audio_input_live and not st.session_state.audio_processed:
@@ -229,7 +229,7 @@ def main():
             key="question_input"
         )
         
-        ask_button = st.form_submit_button("🚀 Ask Question (or press Enter)", type="primary", use_container_width=True)
+        ask_button = st.form_submit_button(" Ask Question (or press Enter)", type="primary", use_container_width=True)
         
         if ask_button and user_question.strip():
             with st.spinner("🤔 Thinking..."):
@@ -252,7 +252,7 @@ def main():
                 # Reset so next voice recording will be processed
                 st.session_state.audio_processed = False
                 
-                st.markdown("### 💬 Response:")
+                st.markdown("### Response:")
                 st.markdown(f'<div class="chat-message bot-message">{ai_response}</div>', unsafe_allow_html=True)
                 
                 if audio_data:
