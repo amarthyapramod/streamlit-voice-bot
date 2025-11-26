@@ -15,7 +15,7 @@ This AI-powered interview bot conducts interactive voice interviews, answering q
 
 ## 🚀 Live Demo
 
-**[Try it live here!](#)** *(Add your Streamlit Cloud URL after deployment)*
+**[Try it live here!](#)** 
 
 ---
 
